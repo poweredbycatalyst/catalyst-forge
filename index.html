@@ -80,7 +80,7 @@
                 window.arCamera = new ARCamera(unityCanvas, videoCanvas);
                 window.fTracker = new FaceTracker(arCamera);
                 try{
-				var numFaces = 4;
+					var numFaces = 4;
                     // await window.fTracker.initialize(
                     //     "./opencv.js",
                     //     "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3",
@@ -119,9 +119,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Builds.data.br",
-                    frameworkUrl: "Build/Builds.framework.js.br",
-                    codeUrl: "Build/Builds.wasm.br",
+                    dataUrl: "Build/Builds.data",
+                    frameworkUrl: "Build/Builds.framework.js",
+                    codeUrl: "Build/Builds.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "AR Streaming",
